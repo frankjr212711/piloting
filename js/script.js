@@ -1,4 +1,8 @@
 
-document.querySelector('.nav-toggler').addEventListener('click', () => {
-    document.querySelector('.home-section').classList.add('fade-out');
-})
+document.querySelector('.nav-toggler').addEventListener('click', (e) => {
+    document.querySelector('.navbar').classList.add('fade-in');
+});
+
+
+
+
