@@ -80,6 +80,8 @@ body {
     margin: 1rem  .25rem;
     font-size: 16px;
     font-family: mulish;
+    cursor: pointer;
+    color: var(--cw-v1-brown-dark-8);
 }
 .home-section .container {
     max-width: 1000px;
