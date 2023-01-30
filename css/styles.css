@@ -29,6 +29,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to left top, #8dfff980, #8dff0080);
     height: 100vh;
+    padding: 0 2rem;
 }
 
 .header-section header {
@@ -44,17 +45,38 @@ body {
     width: 50px;
     height: 50px;
     background: rgba(255, 255, 2555, .25);
-    border: 1px solid rgba(255, 255, 2555, .45);
+    /* border: 1px solid rgba(255, 255, 2555, .9); */
     cursor: pointer;
     border-radius: 25px;
     z-index: 200;
+    box-shadow: 1px 1px 3px 0 #133330b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-section header .nav-toggler span {
-    width: 40px;
-    height: 5px;
+    width: 25px;
+    height: 3px;
     background: #133330;
+    display: inline-block;
 
+    position: relative;
 }
+.header-section header .nav-toggler span::before, 
+.header-section header .nav-toggler span::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #133330;
+    position: absolute;
+}
+.header-section header .nav-toggler span::before {
+    top: -6px;
+}
+.header-section header .nav-toggler span::after {
+    top: 6px;
+}
+
 .home-section {
     display: none;
 }
@@ -100,8 +122,9 @@ body {
     width: 100%;
     margin: auto;
     background: rgba(255, 255, 2555, .25);
-    border: 1px solid rgba(255, 255, 2555, .45);
+    border: 2px solid rgba(255, 255, 2555, .5);
     border-radius: 4px;
+    box-shadow: 1px 1px 20px 0 #133330b2;
     padding: 1.5rem;
 }
 .home-img .home-img-box img {
